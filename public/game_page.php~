@@ -1,0 +1,53 @@
+<?php
+
+    // configuration
+    require("../includes/config.php"); 
+    if (empty($_GET["gameid"]))
+    {
+        apologize("No games to be found here!");
+    }
+    
+    
+    // pull out the info for the game
+    $gameinfo = query("SELECT * FROM games WHERE gameid = ?", $_GET["gameid"]);
+
+	if (empty($gameinfo))
+    {
+        apologize("Sorry, there is currently no information about this game.");
+    }
+
+    $location = query("SELECT * FROM venues WHERE name = ?", $gameinfo[0]["location"]);
+
+    
+
+    // make sure the user's house is participating in the game
+    if ($_SESSION["house"] != $gameinfo[0]["team1"] && $_SESSION["house"] != $gameinfo[0]["team2"])
+    {
+        apologize("Sorry! Your house is not participating in this game.");
+    }
+    
+    // see if the user has already signed up for the game
+    $check = query("SELECT * FROM rosters WHERE gameid = ? AND name = ?", $_GET["gameid"], $_SESSION["name"]);
+    
+    
+    if (empty($check))
+    {
+        $attending = 0;
+    }
+    else
+    {
+        $attending = 1;
+    }
+    // check whether the game has happened yet
+    // it is a future game
+	
+    if (time() <= strtotime($gameinfo[0]["date"]))
+    {
+        render("future_game.php", ["gameinfo" => $gameinfo[0], "location" => $location[0], "attending" => $attending]);
+    }
+    // it is a past game
+    else
+    {
+        apologize("This game has already occurred!");
+    }
+?>                                          

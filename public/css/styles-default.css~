@@ -1,0 +1,384 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto; 
+
+    
+    
+    
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+/* styling for the table */
+
+td{
+    text-align: left;
+}
+
+
+#names 
+{
+	margin: 0 auto;
+}
+
+.form-control{
+	text-align: center;
+}
+
+h1{
+	color: #A41034;
+}
+
+.boxed{
+	background-color: #A41034;
+	padding: 50px 0px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 8px solid black;
+	border-radius: 9px;
+}
+
+.chat{
+	display:inline-block;
+	background-color: #A41034;
+	padding: 20px 0px 0px 0px;
+	width: 75%;
+	border: 8px solid black;
+	border-radius: 9px;
+}
+
+.radio-inline{
+	color: white;
+}
+
+
+.post{
+	width: 500px;
+	margin: 20px auto; 
+}
+
+#past_posts{
+	border: 8px solid black;
+	height: 500px;
+	overflow: scroll;
+}
+
+.postp{
+	text-align: left;
+	margin-left: 10px;
+	font-size: 18px;
+	color: #A41034;
+}
+
+.post_message{
+	text-align: left;
+	margin: 10px 40px 10px 40px;
+	font-size: 20px;
+}
+
+.post_break{
+	border: 2px solid black;
+}
+
+.divider{
+	display: flex;
+}
+
+.fixed{
+	width: 40%;
+}
+
+.flexed{
+	margin-left: 80px;
+	margin-right: 50px;
+	flex-grow: 1;
+	
+}
+
+
+.like{
+	margin-top: 10px;
+	float:right;
+	margin-right: 10px;
+}
+
+.like_num{
+	float:right;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
+.ticker_container{
+	width: 1000px;
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.ticker{
+	float: left;
+	width: 12.5%;
+	height: 70px;
+	border-top: 2px solid #A41034;
+	border-bottom: 2px solid #A41034;
+	border-right: 1px solid #A41034;
+	border-left: 1px solid #A41034;
+	
+}
+
+.ticker_sport{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+}
+
+.ticker_break{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: 1px solid #A41034;
+}
+
+.ticker_team{
+	text-align: left;
+	margin-left: 8px;
+	margin-top: 0px;	
+	margin-bottom: 0px;
+	font-size: 13px;
+}
+
+.ticker_score{
+	float: right;
+	margin-right: 8px;
+}
+
+.result_score{
+	color: white;
+	font-size: 14px;
+}
+
+.checkbox-inline{
+	color: white;
+}
+
+
+.table{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#shield1{
+	float: left;
+	padding:0;
+}
+
+#shield2{
+	float:right;
+	padding:0;
+}
+
+.nav_header{
+	width: 500px;
+	display: inline-block;
+	height: 200px;
+}
+
+.title{
+	float: right;
+	padding-top: 30px;
+	margin-right: 10px;
+	padding-bottom: 0;
+}
+
+#top{
+	margin: 0 auto;
+	width: 1000px;
+	height: 125px;
+	margin-bottom: 0px;
+}
+
+.standings{
+	width: 50%;
+}
+
+.standings td, .standings th{
+	text-align: center;
+}
+
+.bold_row td{
+	font-weight: bolder;
+}
+
+.link{
+	color: #A41034;
+}
+
+.link:hover{
+	text-decoration: underline;
+	color: #A41034;
+}
+
+.result_item{
+	text-align: center;
+}	
+
+th{
+	text-align: center;
+}
+
+td{
+	text-align: center;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+a{
+	color: #A41034;
+}
+
+fieldset{
+	border: none;
+}
+
+.round{
+	border: 3px solid black;
+	width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.boxed-account{
+	background-color: #A41034;
+	padding: 20px 0px;
+	width: 100%;
+	border: 8px solid black;
+	border-radius: 9px;
+	height: 250px;
+}
+
+.boxed-captain{
+	background-color: #A41034;
+	padding: 20px 0px;
+	width: 30%;
+	border: 8px solid black;
+	border-radius: 9px;
+	height: 140px;
+	margin: 0 auto;
+}
+
+.fixed-account{
+	width: 50%;
+}
+
+.flexed-account{
+	flex-grow: 1;
+}
+
+nav{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.logo{
+	float: left;
+	margin-left:0;	
+	width: 280px;
+	height: 141px;
+	padding-bottom: 0;
+}
+
+.logo-login{
+	width: 280px;
+	height: 141px;
+}
+
+.cl-effect-8 a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+label.input{
+	color:white;
+}
+
+.gameleft{
+    display: inline-block;
+    width: 50%;
+}
+
+.gameright{
+    display: inline-block;
+    width: 40%;
+}
+
+.shieldleft{
+    display: inline-block;
+    width: 20%;
+}
+.shieldright{
+    display: inline-block;
+    width: 20%;
+}
+.shieldcenter{
+    display: inline-block;
+    width: 10%;
+}
+
+.shieldbox{
+    height: 250px;
+}
+
+.schedule{
+	width: 400px;
+}
+
+.trash-posts{
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	
+}
+
+.trash-create{
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+

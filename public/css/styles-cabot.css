@@ -1,0 +1,153 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto; 
+    
+    
+    
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+/* styling for the table */
+
+table{
+    margin: 20px;
+}
+
+td{
+    text-align: left;
+}
+
+td:hover{
+    color: red;
+}
+
+#middle .link
+{
+    color: red;
+    margin: auto;
+}
+
+#middle .link:hover
+{
+    background-color: yellow;
+    color: #ffff44;
+    text-decoration: none;
+}
+
+#names 
+{
+	margin: 0 auto;
+}
+
+.form-control{
+	text-align: center;
+}
+
+h1{
+	color: #A41034;
+}
+
+.boxed{
+	background-color: #A41034;
+	padding: 50px 0px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 8px solid #ffff44;
+	border-radius: 9px;
+}
+
+.chat{
+	display:inline-block;
+	background-color: #A41034;
+	padding: 20px 0px 0px 0px;
+	width: 100%;
+	border: 8px solid #ffff44;
+	border-radius: 9px;
+}
+
+.radio-inline{
+	color: white;
+}
+
+
+.post{
+	border: 8px solid #ffff44;
+	width: 500px;
+	margin: 20px auto; 
+	outline: 5px solid #A41034;
+}
+
+.postp{
+	text-align: left;
+	margin-left: 10px;
+	font-size: 18px;
+	color: #A41034;
+}
+
+.post_message{
+	text-align: left;
+	margin: 10px 40px 10px 40px;
+	font-size: 20px;
+}
+
+.divider{
+	display: flex;
+}
+
+.fixed{
+	width: 40%;
+}
+
+.flexed{
+	flex-grow: 1;
+}
+
+.message_title{
+	font-weight: bold;
+	color: #A41034;
+	text-shadow: 1px 1px gray;
+}
+
+.like{
+	margin-top: 10px;
+	float:right;
+	margin-right: 10px;
+}
+
+.like_num{
+	float:right;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
